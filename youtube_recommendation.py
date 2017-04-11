@@ -85,7 +85,7 @@ def read_data(batch):
                 col_no += 1
                 if col_no >= max_window_size:
                     break
-        y.append(label_lst[random.randint(0, len(label_lst)-1)]) # bug
+        y.append(label_lst[random.randint(0, len(label_lst)-1)]) 
         word_num[line_no] = col_no
         line_no += 1
 
